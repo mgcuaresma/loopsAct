@@ -68,3 +68,27 @@ function countUsingForLoop() {
 		}
 	}
 };
+
+//how to access elements of a string using control structures
+
+//get the info of the user
+//analyze the value that will be inserted by the user.
+
+function accessElementsInString() {
+	//get the input of the user using DOM selector
+	let name = document.getElementById("userName").value;
+	
+	//validate and make sure that input is NOT equivalent to blank.
+	if (name !== "") {
+		let textLength = document.getElementById("stringLength")
+		textLength.innerHTML = "The input is " + name.length + " characters long."
+		//Upon accessing elements inside a string, this can be done so using [] square brackets.
+		//keep in minde we can access each element through the use of its index number count.
+		for (let startIndex = 0; startIndex < name.length; startIndex++) {
+			console.log(name[startIndex])
+		}
+	} else {	
+		alert("Invalid input")
+	}
+};
+
