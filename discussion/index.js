@@ -38,8 +38,33 @@ function countUsingDoWhile() {
 		do {
 			alert("Count value: " + indexStart)
 			displayText.innerHTML = task2Input + " is valid."
-			indexStart++		} while (indexStart <= task2Input) {
+			indexStart++} while (indexStart <= task2Input) {
 
 		}
 	}
+};
+
+
+//for loop
+//syntax
+/*
+for (initialization, expression/condition; finalExpression) {
+	//statement of procedures
 }
+*/
+
+function countUsingForLoop() {
+	let task3Input = document.getElementById("task3").value;
+	let res = document.getElementById("response")
+	// validate if the value of the data is what we desire
+	if (task3Input <= 0) {
+		res.innerHTML = "Wrong number";
+	} else {
+		//initialization;condition;iteration/finalExp
+		for (let startCount = 0; startCount <= task3Input; startCount++) {
+			// since the start of the count started with 0 then every iteration, we should add a value of 1 to eventually meet the condition and terminate the process.
+			//describe what will happen per iteration.
+			alert(startCount)
+		}
+	}
+};
