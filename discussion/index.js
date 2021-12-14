@@ -17,4 +17,29 @@ function countUsingWhile() {
 		task1Input--;
 		}
 	}	
+};
+
+// a function that will count to a series of number depending on the value inserted by the user.
+
+function countUsingDoWhile() {
+	//get the input of the user.
+	let task2Input = document.getElementById("task2").value
+	if (task2Input <= 0) {
+		// the value is not valid.
+		let msg = document.getElementById("info")
+		msg.innerHTML = "Invalid af"
+	} else {
+		// proceed because the value is valid.
+
+		// task will be to count from 1 to n (depending on the value inserted by the user.)
+		// the block of code here will be executed first.
+		let displayText = document.getElementById("info")
+		let indexStart = 1;
+		do {
+			alert("Count value: " + indexStart)
+			displayText.innerHTML = task2Input + " is valid."
+			indexStart++		} while (indexStart <= task2Input) {
+
+		}
+	}
 }
